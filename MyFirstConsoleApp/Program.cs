@@ -20,11 +20,12 @@ while(1==1)
         Console.WriteLine("C.Loyalty");
         Console.WriteLine("D.Rebellion");
         choice = Console.ReadLine();
+        choice = choice.ToUpper();
         if(choice == "C")
         {
             contents = File.ReadAllText(@"C:\Users\nate\OneDrive\Documents\StoryWui\StoryWui\Loyalty.txt");
             Console.WriteLine(contents);
-            Console.WriteLine("thanks for playing my game");
+            Console.WriteLine("thanks for playing my game"); 
             System.Environment.Exit(1);
         }
         if(choice == "D")
@@ -43,6 +44,7 @@ while(1==1)
         Console.WriteLine("E.Respect");
         Console.WriteLine("F.Scorn");
         choice = Console.ReadLine();
+        choice = choice.ToUpper();
         if(choice == "E")
         {
             contents = File.ReadAllText(@"C:\Users\nate\OneDrive\Documents\StoryWui\StoryWui\Respect.txt");
@@ -51,6 +53,7 @@ while(1==1)
             Console.WriteLine("G.Tribute");
             Console.WriteLine("H.Repair");
             choice = Console.ReadLine();
+            choice = choice.ToUpper();
             if(choice == "G")
             {
                 contents = File.ReadAllText(@"C:\Users\nate\OneDrive\Documents\StoryWui\StoryWui\Respect.txt");
@@ -59,6 +62,7 @@ while(1==1)
                 Console.WriteLine("I.Sacrifice");
                 Console.WriteLine("J.Harvest");
                 choice = Console.ReadLine();
+                choice = choice.ToUpper();
                 if(choice == "I")
                 {
                     contents = File.ReadAllText(@"C:\Users\nate\OneDrive\Documents\StoryWui\StoryWui\Respect.txt");
@@ -90,6 +94,7 @@ while(1==1)
             Console.WriteLine("K.Repair");
             Console.WriteLine("L.Tribute");
             choice = Console.ReadLine();
+            choice = choice.ToUpper();
             if(choice == "L")
             {
                 contents = File.ReadAllText(@"C:\Users\nate\OneDrive\Documents\StoryWui\StoryWui\Respect.txt");
@@ -98,7 +103,8 @@ while(1==1)
                 Console.WriteLine("I.Sacrifice");
                 Console.WriteLine("J.Harvest");
                 choice = Console.ReadLine();
-                                if(choice == "I")
+                choice = choice.ToUpper();
+                    if(choice == "I")
                 {
                     contents = File.ReadAllText(@"C:\Users\nate\OneDrive\Documents\StoryWui\StoryWui\Respect.txt");
                     Console.WriteLine(contents);
